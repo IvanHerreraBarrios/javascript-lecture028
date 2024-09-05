@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+        function gretting(name){
+            name = name || "unknown";
+            console.log(`Hello, my name is ${name}`)
+        }
+        /*
+        function gretting(name = "unknown"){
+            console.log(`Hello, my name is ${name}`)
+        }*/
+       console.log();
+       gretting("Jon");
+       console.log(19 || "right");
+       console.log(true || "right");
+       console.log([] || "right");
+       console.log(false || "right");
+       console.log(null || "right");
+       console.log(undefined || "right");
+       console.log("" || "right");
+
+       console.log(false && "right");
+       console.log(null && "right");
+       console.log(undefined && "right");
+       console.log("" && "right");
+       console.log(19 && "right");
+       console.log(true && "right");
+       console.log([] && "right");
+    </script>
+</body>
+
+</html>
